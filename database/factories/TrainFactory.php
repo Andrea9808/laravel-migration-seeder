@@ -20,6 +20,7 @@ class TrainFactory extends Factory
             'company'=>fake()->unique()->sentence(1),
             'departure_station'=>fake()->unique()->sentence(1),
             'arrival_station'=>fake()->unique()->sentence(1),
+            'departure_datetime' => fake()->dateTimeBetween('+0 day', '+1 week'),
             'arrival_time'=>fake()->time(),
             'train_code'=>fake()->unique()->sentence(1),
             'number_carriages'=>fake()->randomNumber(2),

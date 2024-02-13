@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('company', 60)->unique();
             $table->string('departure_station', 60)->unique();
             $table->string('arrival_station', 60)->unique();
+            $table->datetime('departure_datetime');
             $table->time('arrival_time');
             $table->string('train_code')->unique();
             $table->integer('number_carriages');
